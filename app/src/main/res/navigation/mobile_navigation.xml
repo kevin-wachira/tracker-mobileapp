@@ -14,30 +14,25 @@
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.tracker.ui.tracking.TrackingFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_tracking"
         tools:layout="@layout/fragment_tracking" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.tracker.ui.driver.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_Driver" />
+        android:name="com.example.tracker.ui.driver.driverFragment"
+        android:label="@string/menu_driver"
+        tools:layout="@layout/fragment_driver" />
 
     <fragment
         android:id="@+id/nav_tools"
         android:name="com.example.tracker.ui.Report.ReportFragment"
-        android:label="@string/menu_tools"
+        android:label="@string/menu_report"
         tools:layout="@layout/fragment_report" />
 
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.tracker.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
 
     <fragment
         android:id="@+id/nav_send"
         android:name="com.example.tracker.ui.fleet.fleetFragment"
-        android:label="@string/menu_send"
+        android:label="@string/menu_fleet"
         tools:layout="@layout/fragment_fleet" />
 </navigation>

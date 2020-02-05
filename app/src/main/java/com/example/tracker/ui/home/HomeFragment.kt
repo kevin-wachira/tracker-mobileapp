@@ -1,5 +1,6 @@
 package com.example.tracker.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.tracker.R
+import com.example.tracker.ui.tracking.MapsActivity
+import kotlinx.android.synthetic.main.activity_map.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
@@ -22,10 +26,11 @@ class HomeFragment : Fragment() {
         homeViewModel =
             ViewModelProviders.of(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(this, Observer {
-            textView.text = it
-        })
+
         return root
+/*
+        btnmap.setOnClickListener {
+            val  sumintent = Intent(this,MapsActivity::class.java)
+            */
     }
 }

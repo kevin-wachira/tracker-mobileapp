@@ -6,9 +6,16 @@
     android:orientation="vertical"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/btnmap"
+        android:layout_width="293dp"
+        android:layout_height="130dp"
+        android:layout_weight="1"
+        android:text="Button" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="456dp"
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
@@ -28,8 +35,8 @@
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="match_parent"
-                    android:layout_gravity="center"
                     android:layout_height="154dp"
+                    android:layout_gravity="center"
                     app:srcCompat="@mipmap/fleet_round" />
 
                 <LinearLayout
@@ -46,7 +53,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"/>
+                    android:orientation="horizontal" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -63,7 +70,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"/>
+                android:orientation="vertical" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -96,7 +103,7 @@
                     android:elevation="5dp"
                     app:cardCornerRadius="5dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="320dp">
+                    tools:layout_editor_absoluteY="320dp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
