@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
 
 
-
+<activity android:name=".ui.driver.registration"/>
+        <activity android:name=".ui.tracking.MapsActivity"/>
         <activity
             android:name=".MenuActivity"
             android:label="@string/title_activity_menu"
